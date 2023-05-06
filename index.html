@@ -1,0 +1,162 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;700&family=Quicksand:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Style -->
+    <link rel="stylesheet" href="./style.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>My Bio</title>
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                    <div class="navbar_name"><a href="./index.html">Thai, Huynh Quoc</a></div>
+                <ul class="navbar_links">
+                    <li class="navbar_link"><a href="#aboutme">About me</a></li>
+                    <li class="navbar_link"><a href="#job">What can I do?</a></li>
+                    <li class="navbar_link"><a href="#contact">Contact me</a></li>
+                </ul>
+                <div class="navbar_icons">
+                    <div class="navbar_icon"></div>
+                  </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Main -->
+    <main class="Main">
+        <section class="Cover">
+            <div class="CoverContent" data-aos="zoom-out" data-aos-duration="750">
+                <div class="CoverPicture">
+                    <img src="./pictures/mypic.jpg">
+                </div>
+                <div class="CoverWords">
+                    <h1> Hello there! </h1>
+                    <p> Welcome to my bio page <br>
+                        (o ^ ▽ ^ o)	 </p>
+                </div>
+            </div>
+        </section>
+        <section class="About" id="aboutme">
+            <div class="AboutContent" data-aos="fade-right" data-aos-duration="750">
+                <div class="AboutTitle">
+                    <h1>About me!</h1>
+                </div>
+                <div class="AboutWords" data-aos="fade-left" data-aos-duration="750">
+                    <ul>
+                        <li><p>I was born in 22.12.2003, at 4pm.</p></li>
+                        <li><p>I live in Thu Dau Mot City, Binh Duong.</p></li>
+                        <li><p>Currently I am a student of HCMC University of Education, studing Information Technology, majoring Software Engineering.</p></li>
+                        <li><p>I am a very funny and open-mind person, willing to learn</p></li>
+                        <li><p>I am interested in making webs, making Android/iOS apps and making a litte bit about SQL.</p></li>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="Job" id="job" data-aos="flip-left" data-aos-duration="750">
+            <div class="JobContent">
+                <div class="JobTitle">
+                    <h1>What can I do?</h1>
+                </div>
+                <div class="JobWords">
+                    <h2>Here is what I can do:</h2>
+                    <table>
+                        <tr class="Language">
+                            <td>C++</td>
+                            <td>Java</td>
+                            <td>Kotlin</td>
+                            <td>C#</td>
+                            <td>HTML</td>
+                            <td>CSS</td>
+                            <td>Python</td>
+                        </tr>
+                        <tr>
+                            <td>Yes</td>
+                            <td>Yes</td>
+                            <td>No</td>
+                            <td>Yes</td>
+                            <td>Yes</td>
+                            <td>Yes</td>
+                            <td>Yes</td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+        </section>
+        <section class="Contact" id="contact">
+            <div class="ContactContent" >
+                <div class="ContactTitle" data-aos="zoom-in-left" data-aos-duration="750">
+                    <h1>Contact me at</h1>
+                </div>
+                <div class="ContactInfo" data-aos="zoom-in-right" data-aos-duration="750">
+                    <ul>
+                        <li>
+                            <span><i class="fa fa-facebook"></i></span>
+                            <span><a href="https://www.facebook.com/alexthai.huynh"> Thai Huynh Quoc</a></span>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-map-marker"></i></span>
+                            <span> 280, An Duong Vuong St, Sai Gon, Viet Nam</span>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-phone"></i></span>
+                            <span><a href="tel:+84 123 456 789">+84 123 456 789</a></span>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-envelope"></i></span>
+                            <span><a href="mailto:thaihq.work@gmail.com">thaihq.work@gmail.com</a></span>
+                       </li>
+                        <li>
+                            <span><i class="fa fa-github"></i></span>
+                            <span><a href="https://github.com/thegaelis">thegaelis</a></span>
+                        </li>
+
+                    </ul>
+                </div>
+                
+            </div>
+        </section>
+        <section class="MessageMe" data-aos="fade-up" data-aos-duration="750" >
+           <div class="MessageMeform">
+                <h2>Feel free to message me</h2>
+                <form onsubmit="show_alert()">
+                     <div class="txt_input">
+                        <input type="text" name="" required="">
+                        <label>Your name, for convenience</label>
+                    </div>
+                    <div class="txt_input">
+                        <input type="text" name="" required="">
+                        <label>What would you like to tell me?</label>
+                    </div>
+                    <input type="submit" name="" value="Message me!">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>
+            &copy Copyright 2023.
+            <br>
+            Made by Thai Huynh Quoc, University of Education, HCMC
+        </p>
+    </footer>
+    <script src="https://kit.fontawesome.com/5f4ec48707.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>  
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>

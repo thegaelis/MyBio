@@ -1,2 +1,1 @@
-# MyBio
- My first personal bio
+Thaihq's first personal bio.

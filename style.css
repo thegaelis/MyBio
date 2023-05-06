@@ -1,0 +1,539 @@
+:root {
+    --smooth: all .3s ease-in;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family:'Nunito Sans', sans-serif;
+}
+img {
+    max-width: 100%;
+    width: 100%;
+}
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto 3vh;
+    padding: 1vw;
+}
+/* Header  */
+header {
+    position: relative;
+    width: 100%;
+}
+.navbar {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+.navbar_name {
+    padding: 15px 15px 15px 15px;
+}
+.navbar_name a {
+    color: #0783e0;
+    text-decoration: none;
+    font-family: 'Nunito Sans',sans-serif;
+    font-weight: 700;
+    font-size: 2.0rem;
+}
+.navbar_links {
+    z-index: 5;
+    position: initial;
+    transform: translateX(0);
+    opacity: 1;
+    background: transparent;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.navbar_link {
+    list-style: none;
+    margin: 0 4vw;
+}
+.navbar_link a {
+    text-decoration: none;
+    color: #3b96db;
+    font-size:1.5rem;  
+}
+.navbar_link a:hover {
+    color: #22567d;
+    transition: var(--smooth);
+
+}
+.navbar__icons {
+    display: none;
+}
+.Main{
+    display: block;
+}
+* {
+    box-sizing: border-box;
+}
+.Cover {
+    padding-bottom: 3rem;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    height: fit-content;
+    margin: auto;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.CoverPicture{
+    float: left;
+}
+.CoverPicture img{
+    border-radius: 50%;
+    width: 30rem;
+
+}
+.CoverWords {
+    margin-top: 5vw;
+    position: center;
+    float: right;
+    padding-left: 6vw;
+}
+.CoverWords h1{
+    text-align: center;
+    font-size: 4rem;
+}
+.CoverWords p{
+    text-align: center;
+    font-family: 'Quicksand',sans-serif;
+    font-size: 2rem;
+}
+.About{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.AboutTitle{
+    position: relative;
+    color: #3b96db;
+    padding: 2rem;
+    float:left;
+}
+.AboutTitle h1{
+    font-size: 8rem;
+}
+.AboutWords{
+    position: relative;
+    font-family: 'Quicksand',sans-serif;
+    align-items: flex-start;
+    font-size: 2rem;
+}
+.AboutWords ol{
+}
+.AboutWords li{
+    color: #3b96db;
+}
+.AboutWords p{
+    color:#000000;
+}
+.Job{
+    border-radius: 15px;
+    position: relative;
+    background-color: #0783e0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    flex-direction: column;
+    display: flex;
+    align-items:center;
+    justify-content: center
+}
+.JobTitle{
+    text-align: center;
+    position: center;
+    color: #FFFFFF;
+    padding: 10px;
+}
+.JobTitle h1{
+    font-size:8rem;
+}
+.JobWords{
+    position: relative;
+}
+.JobWords h2{
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Quicksand',sans-serif;
+    color: #FFFFFF;
+}
+.JobWords table{
+    border: 1px solid black;
+    position: relative;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+.JobWords td{
+    padding:2rem;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Quicksand', sans-serif;
+}
+.Language{
+    color:#3b96db;
+}
+.Contact{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.ContactContent{
+    align-self: center;
+    display:flex;
+    flex-direction: row-reverse;
+
+}
+.ContactTitle{
+    align-items: center;
+    position: center;
+    float: right;
+}
+.ContactTitle h1{
+    font-size: 8rem;
+}
+.ContactInfo{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 2rem;
+    font-family:'Quicksand',sans-serif;
+}
+.ContactInfo li{
+    margin:10px;
+    list-style: none;
+}
+.ContactInfo a{
+    color:#000000;
+    text-decoration: none;
+}
+.ContactInfo a:hover{
+    color:#3b96db;
+    text-decoration: none;
+}
+.MessageMe{
+    display: flex;
+    justify-content: center;
+}
+.MessageMeform{
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    position: relative;
+    padding:6rem;
+    background: #3b96db;;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+}
+
+.MessageMeform h2 {
+    font-size: 3.5rem;
+    margin:0 0 4rem;
+    padding:0;
+    color: #fff;
+}
+.MessageMeform .txt_input{
+    position: relative;
+}
+.MessageMeform .txt_input input{
+    position: relative;
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 0.8rem 0;
+    color:#fff;
+    margin-bottom:2rem;
+    border:none;
+    border-bottom:1px solid #fff;
+    outline: none;
+    background: transparent;
+    font-family: 'Quicksand',sans-serif;
+}
+.MessageMeform .txt_input label {
+     position: absolute;
+     top:0;
+     left:0;
+     font-size: 1.5rem;
+     padding: 0.8rem 0;
+     color:#fff;
+     pointer-events: none;
+     transition: .5s;
+ }
+ .MessageMeform .txt_input input:focus ~ label,
+ .MessageMeform .txt_input input:valid ~ label {
+     top:-1.5rem;
+     left:0;
+     color:#000000;
+     font-size:1rem;
+ }
+.MessageMeform input[type="submit"] {
+     font-family: 'Nunito Sans',sans-serif;
+     font-weight: 700;
+     background: transparent;
+     border:none;
+     outline: none;
+     color:#0783e0;
+     background: #FFFFFF;
+     padding: 1rem 1.5rem;
+     font-size: 1.5rem;
+     cursor: pointer;
+     border-radius: 10px;
+ }
+ footer{
+    padding: 1.5rem;
+    position: center;
+    text-align:center;
+    justify-content: center;
+ }
+ footer p{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5rem;
+    
+    
+ }
+/* Generate Menu button */
+.navbar_icon {
+}
+
+.navbar_icon:before,
+.navbar_icon:after {
+}
+
+.navbar_icon:before {
+}
+
+.navbar_icon:after {
+}
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #2664d5; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 1rem; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 2rem; /* Increase font size */
+  }
+  
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/* Slideshow container */
+.Slideshow_container {
+    max-width: 100%;
+    height: fit-content;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    background: #ccc;
+    position: relative;
+}
+
+/* Preset the Picture  */
+.mySlides img{
+    position: relative;
+    width: 100%;
+    vertical-align: middle;
+    border-style: none;
+}
+/* Content of an image */
+.ContentContainer{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+.imgContent{
+    flex-wrap: wrap;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* Caption text */
+.text {
+    color: #fff;
+    font-weight: 500;
+    margin: auto;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 4vw;
+    font-family: 'Quicksand',sans-serif;
+}
+
+/* Text*/
+.imgTitle {
+    font-weight: 700;
+    font-size: 6vw;
+    margin: auto;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+}
+
+
+@media  (max-width: 62em)
+{
+    .navbar_links {
+        display: inline;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 288px;
+        height: 100%;
+        background-color: #3b96db;
+        z-index: 5;
+        transition:var(--smooth);
+        transform: translateX(-100%);
+        opacity: 0;
+        
+    }
+    .navbar_link {
+        list-style: none;
+        padding: 0px 0px 47px 0px;
+    }
+    .navbar_link a{
+        color: #FFFFFF;
+        transition: var(--smooth);
+    }
+    .navbar_link a:hover {
+        color: #000000;
+        transition: var(--smooth);
+    }
+    .navbar_icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        cursor: pointer;
+        transition: var(--smooth);
+        z-index: 6;
+    }
+    .navbar_icon {
+        width: 45px;
+        height: 6px;
+        background-color: #3b96db;
+        border-radius: 5px;
+        transition: var(--smooth);
+        position: relative;
+    }
+    .navbar_icon:before,
+    .navbar_icon:after {
+        content: '';
+        position: absolute;
+        width: 45px;
+        height: 6px;
+        background-color: #3b96db;
+        border-radius: 5px;
+        transition: var(--smooth);
+    }
+    
+    .navbar_icon:before {
+        transform: translateY(-12px);
+    }
+    
+    .navbar_icon:after {
+        transform: translateY(12px);
+    }
+    .navbar_links.navbar_open {
+        transform: translateX(0);
+        opacity: 1;
+        transition: var(--smooth);
+    }
+    
+    .open .navbar_icon {
+        position: fixed;
+        background: transparent;
+    }
+    
+    .open .navbar_icon:before {
+        transform: rotate(45deg) translate(0px, -0px);
+    }
+    
+    .open .navbar_icon::after {
+        transform: rotate(-45deg) translate(0px, 0px);
+    
+    }
+    .CoverPicture{
+        float: none;
+    }
+    .CoverWords {
+        float: none;
+        padding-left: 0vw;
+    }
+    .AboutTitle{
+        position: center;
+        float: none;
+    }
+    .AboutTitle h1{
+        font-size: 4rem;
+    }
+    .AboutWords{
+        font-size:2rem
+    }
+    .JobTitle h1{
+        font-size:4rem;
+    }
+    .JobWords{
+        position: center;
+    }
+    .JobWords h2{
+        font-size: 2rem;
+    }
+    .JobWords td{
+        padding: 1.0rem;
+        font-size: 1.5rem;
+    }
+    .Contact{
+        position: relative;
+        display: relative;
+        align-items: center;
+        justify-content: center
+    }
+    .ContactTitle h1{
+        position: center;
+        justify-content: center;
+        float: right;
+        font-size: 4rem;
+    }
+    .ContactInfo{
+        position: center;
+        justify-content: center;
+        font-size: 1.5rem;
+    }
+    .MessageMe{
+        border-radius: 10px;
+    }
+
+}
